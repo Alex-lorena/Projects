@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    width: 100vw;
+    height: auto;
+    color: white;
+    padding:1rem 4% ;
+    background-color: rgba(105, 103, 103, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    cursor: pointer;
+    padding-right: 1rem;
+    border-right: 0.1rem solid black;
+}
+
+header img{
+    height: 11vh;
+}
+
+span {
+    font-weight: bold;
+    color: #0edebf;
+}
+
+h2{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    line-height: 1.5rem;
+}
+
+nav a {
+    font-size: 1.2rem;
+    margin-left: 3rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    font-size: 1.3rem;
+    color: #0edebf;
+    border-bottom: 0.2rem solid #0edebf;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    background-image: url(img/home.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;  
+    width: 100vw;
+}
+
+button {
+    width: 200px;
+    padding: 0.75rem;
+    background-color: #0edebf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0bc2a8;
+    transform: translateY(-2px);
+}
+
+.home::after {
+    content: "";
+    position: absolute;
+    bottom: -1px; 
+    left: 0;
+    width: 100%;
+    height: 100px; 
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), white);
+}
+
+.contentor {
+    display: none;
+    background-color: #6ef0dc;
+}
+
+.sobre {
+    margin: 30px 30px;
+    padding: 100px 4%;
+    border: 0.1rem solid black;
+    border-radius: 2rem;
+    background-color: white;
+}
+
+.sobre h2 {
+    color: #0edebf;
+    text-align: center;
+}
+
+.sobre img {
+    width: 100%;
+    height: 500px;
+}
+
+.especies {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 2rem;
+    margin: 30px 30px;
+}
+
+.especie {
+    display: flex;
+    gap: 2rem;
+    padding: 30px;
+    border: 0.1rem solid black;
+    border-radius: 2rem;
+    background-color: white;
+}
+
+.especie h2 {
+    color: #0edebf;
+    font-size: 2rem;
+    border-bottom: 0.2rem solid black;
+}
+
+.especie img {
+    height: 300px;
+    width: 400px
+}
+
+.emcv {
+    margin: 30px 30px;
+    padding: 20px 20px;
+    border: 0.1rem solid black;
+    border-radius: 2rem;
+    background-color: white;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.emcv h2{
+    color: #0edebf;
+    text-align: center;
+}
+
+.emcv img {
+    height: 500px;
+    width: 1000px;
+}
+
+.contactar {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(252, 252, 252, 0.5);
+    border: 1px solid #e0e0e0;
+}
+
+.contactar h2 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #0edebf;
+    outline: none;
+    box-shadow: 0 0 5px rgba(14, 222, 191, 0.5);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contactar button {
+    width: 100%;
+}
+
+.contactar button:active {
+    transform: translateY(0);
+}
+
+.form-group input:hover,
+.form-group textarea:hover {
+    border-color: #0edebf;
+}
+
+#ver-menos {
+    margin: 3rem 30px;
+    background-color: white;
+    color: #0edebf;
+}
+
+#ver-menos:hover {
+    background-color: #e0e0e0;
+}
+
+@media (max-width: 1070px) {
+    header {
+        height: auto;
+        padding: 1rem 4%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        padding-right: 0;
+        border-right: none;
+        margin-bottom: 0.5rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    nav a {
+        margin-left: 0;
+        font-size: 1rem;
+    }
+
+    nav a:hover {
+        font-size: 1.1rem;
+    }
+
+    .home h2 {
+        font-size: 2rem;
+        padding: 0 1rem;
+    }
+
+    .home::after {
+        height: 50px;
+    }
+
+    .sobre {
+        padding: 50px 4%;
+    }
+
+    .sobre img {
+        height: auto;
+    }
+
+    .especies {
+        grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+        margin: 1rem;
+    }
+
+    .especie {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .especie img {
+        width: 100%;
+        height: auto;
+    }
+
+    .especie h2 {
+        font-size: 1.5rem;
+    }
+
+    .emcv {
+        margin: 1rem;
+    }
+
+    .emcv img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contactar {
+        padding: 1.5rem;
+    }
+
+    .contactar h2 {
+        font-size: 1.75rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .contactar button {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+}
